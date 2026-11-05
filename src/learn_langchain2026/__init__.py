@@ -1,7 +1,3 @@
-from dotenv import load_dotenv
+from learn_langchain2026.main import main
 
-load_dotenv()
-
-def main() -> None:
-    print("Hello from learn-langchain2026!")
-
+__all__ = ["main"]
