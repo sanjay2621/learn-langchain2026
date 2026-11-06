@@ -33,10 +33,10 @@ The summary should be clear, coherent, and easy to understand.
         template=summary_template,
     )
 
-    llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0)
+    llm = ChatOpenAI(model="gpt-6-luna")
     chain = summary_prompt | llm
     result = chain.invoke(input={"information": information})
-    print(result)
+    print(result.content)
 
     return result
 
